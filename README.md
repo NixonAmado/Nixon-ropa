@@ -14,12 +14,21 @@ La empresa safe clothing desea realizar un backend que le permita llevar el cont
 
 Listar los insumos que pertenecen a una prenda especifica. El usuario debe ingresar el código de la prenda.
 ```
-/API/Insumo/GetAllInsumosByPrenda/2
+/API/Insumo/GetAllInsumosByPrenda/123
 ```
+![Alt text](ImagesReadme\insumoConsulta.png)
+
 
 Listar los Insumos que son vendidos por un determinado proveedor cuyo tipo de persona sea Persona Jurídica. El usuario debe ingresar el Nit de proveedor.
+```
+
+/API/Insumo/GetAllInsumosByPrenda/{prenda}
+```
 
 Listar todas las ordenes de producción cuyo estado se en proceso.
+```
+/API/Orden/GetAllOrdenesProduccionByEstado/{estado}
+```
 
 Listar los empleados por un cargo especifico. Los cargos que se encuentran en la empresa son: Auxiliar de Bodega, Jefe de Producción, Corte, Jefe de bodega, Secretaria, Jefe de IT.
 ```
@@ -29,6 +38,9 @@ Listar los empleados por un cargo especifico. Los cargos que se encuentran en la
 
 
 Listar las ordenes de producción que pertenecen a un cliente especifico. El usuario debe ingresar el IdCliente y debe obtener la siguiente información:
+```
+/API/Orden/GetAllOrdenesbyIdCliente/{id}
+```
 
 1. IdCliente, Nombre, Municipio donde se encuentra ubicado.
 2. Nro de orden de producción, fecha y el estado de la orden de producción Se debe mostrar la descripción del estado, código del estado, valor total de la orden de producción.

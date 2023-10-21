@@ -21,7 +21,7 @@ public class InsumoController : BaseApiController
     }
 
     [Authorize(Roles = "Administrador")]
-    [HttpGet("GetAllInsumosByPrenda/{prenda}")]
+    [HttpGet("GetAllInsumosByPrenda/{Idprenda}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<InsumoPDto>>> GetAllInsumosByPrenda(int IdPrenda)
@@ -31,12 +31,12 @@ public class InsumoController : BaseApiController
     }
     
     [Authorize(Roles = "Administrador")]
-    [HttpGet("GetAllByProvedorTipoPersona/{proveedor}/{tipoPersona}/{Nit}")]
+    [HttpGet("GetAllByProvedorTipoPersona/{tipoPersona}/{Nit}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<InsumoPDto>>> GetAllByProvedorTipoPersona(string proveedor, string Tpersona, int Nit)
+    public async Task<ActionResult<IEnumerable<InsumoPDto>>> GetAllByProvedorTipoPersona(string tipoPersona, int Nit)
     {
-        var insumos = await _unitOfWork.Insumos.GetAllByProvedorTipoPersona(proveedor, Tpersona, Nit);
+        var insumos = await _unitOfWork.Insumos.GetAllByProvedorTipoPersona(tipoPersona, Nit);
         return _mapper.Map<List<InsumoPDto>>(insumos);
     }
     

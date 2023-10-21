@@ -33,16 +33,16 @@ namespace Application.Repository
     //Listar los insumos que pertenecen a una prenda especifica. El usuario debe ingresar el código de la prenda.
     public async Task<IEnumerable<Insumo>> GetAllInsumosByPrenda(int codigo )
     {
-        return await _context.Insumos         
-                            .Where(p => p.InsumosPrendas.Any(p => p.Prenda.IdPrenda == codigo ))
-                            .ToListAsync();
+        return await _context.Prendas.Where(e => e.IdPrenda == codigo)
+            .SelectMany(e => e.Insumos)
+            .ToListAsync();
+        ;
     }
     //Listar los Insumos que son vendidos por un determinado proveedor cuyo tipo de persona sea Persona Jurídica. El usuario debe ingresar el Nit de proveedor.
-    public async Task<IEnumerable<Insumo>> GetAllByProvedorTipoPersona(string proveedor, string Tpersona, int Nit )
+    public async Task<IEnumerable<Insumo>> GetAllByProvedorTipoPersona(string Tpersona, int Nit )
     {
         return await _context.Insumos         
-                            .Where(p => p.InsumosProveedores.Any(p => p.Proveedor.Nombre.ToUpper() == proveedor.ToUpper() && 
-                            p.Proveedor.TipoPersona.Nombre.ToUpper() == Tpersona.ToUpper() && 
+                            .Where(p => p.InsumosProveedores.Any(p =>  p.Proveedor.TipoPersona.Nombre.ToUpper() == Tpersona.ToUpper() && 
                             p.Proveedor.NitProveedor == Nit))
                             .ToListAsync();
     }

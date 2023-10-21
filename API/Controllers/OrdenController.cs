@@ -31,6 +31,17 @@ public class OrdenController : BaseApiController
 
     }    
 
+
+    [Authorize(Roles = "Administrador")]
+    [HttpGet("GetAllOrdenesProduccionByEstado/{estado}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<IEnumerable<OrdenClienteDto>>> GetAllOrdenesProduccionByEstado(string estado)
+    {
+        var ordenes = await _unitOfWork.Ordenes.GetAllOrdenesProduccionByEstado(estado);
+        return _mapper.Map<List<OrdenClienteDto>>(ordenes);
+
+    }   
     
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]

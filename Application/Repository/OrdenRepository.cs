@@ -31,7 +31,7 @@ namespace Application.Repository
     public async Task<IEnumerable<Orden>> GetAllOrdenesProduccionByEstado(string estado)
     {
         return await _context.Ordenes         
-                            .Where(p => p.Estado.Descripcion == estado)
+                            .Where(p => p.Estado.TipoEstado.Descripcion == estado)
                             .ToListAsync();
     }    
     /*Listar las ordenes de producción que pertenecen a un cliente especifico. El usuario debe ingresar el IdCliente y debe obtener la siguiente información:
