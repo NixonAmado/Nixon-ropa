@@ -5045,19 +5045,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nixon\\.nuget\\packages\\": {}
+    "C:\\Users\\APT01-65\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

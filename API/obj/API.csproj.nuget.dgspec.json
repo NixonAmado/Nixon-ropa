@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\API\\API.csproj": {}
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\API\\API.csproj": {
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\API\\obj\\",
+        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\Application.csproj": {
-                "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\Application.csproj"
+              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj"
               }
             }
           }
@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.7.1, )"
@@ -53,6 +57,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
@@ -71,6 +79,14 @@
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.6.8, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -104,17 +120,17 @@
         }
       }
     },
-    "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\Application.csproj": {
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Application\\obj\\",
+        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -126,11 +142,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj"
+              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\Persistence.csproj"
+              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -164,17 +180,17 @@
         }
       }
     },
-    "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj": {
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -231,17 +247,17 @@
         }
       }
     },
-    "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -253,8 +269,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\nixon\\OneDrive\\Documentos\\c#\\PracticasWebToken\\Domain\\Domain.csproj"
+              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj"
               }
             }
           }
@@ -269,6 +285,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.11, )"
