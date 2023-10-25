@@ -14,37 +14,36 @@ La empresa safe clothing desea realizar un backend que le permita llevar el cont
 
 Listar los insumos que pertenecen a una prenda especifica. El usuario debe ingresar el código de la prenda.
 ```
-/API/Insumo/GetAllInsumosByPrenda/123
+/API/Insumo/GetAllInsumosByPrenda/{codigoPrenda}
 ```
 ![Alt text](ImagesReadme\insumoConsulta.png)
 
 
 Listar los Insumos que son vendidos por un determinado proveedor cuyo tipo de persona sea Persona Jurídica. El usuario debe ingresar el Nit de proveedor.
 ```
-
-/API/Insumo/GetAllInsumosByPrenda/{prenda}
+/API/Insumo/GetAllByProvedorTipoPersona/{tipoPersona}/{Nit}
 ```
 
 Listar todas las ordenes de producción cuyo estado se en proceso.
 ```
-/API/Orden/GetAllOrdenesProduccionByEstado/{estado}
+/API/Orden/GetAllOrdenesbyIdCliente/{idCliente}
 ```
 
 Listar los empleados por un cargo especifico. Los cargos que se encuentran en la empresa son: Auxiliar de Bodega, Jefe de Producción, Corte, Jefe de bodega, Secretaria, Jefe de IT.
 ```
-/API/Empleado/GetAllEmpleadosByCargo/Auxiliar de bodega
+/API/Empleado/GetAllEmpleadosByCargo/{cargo}
 ```
 ![Alt text](ImagesReadme\CargosConsulta.png)
 
 
 Listar las ordenes de producción que pertenecen a un cliente especifico. El usuario debe ingresar el IdCliente y debe obtener la siguiente información:
 ```
-/API/Orden/GetAllOrdenesbyIdCliente/{id}
+/API/Orden/GetAllOrdenesbyIdCliente/{idCliente}
 ```
-
 1. IdCliente, Nombre, Municipio donde se encuentra ubicado.
 2. Nro de orden de producción, fecha y el estado de la orden de producción Se debe mostrar la descripción del estado, código del estado, valor total de la orden de producción.
 3. Detalle de orden: Nombre de la prenda, Código de la prenda, Cantidad, Valor total en pesos y en dólares.
+
 
 Listar las ventas realizadas por un empleado especifico. El usuario debe ingresar el Id del empleado y mostrar la siguiente información.
 
