@@ -28,6 +28,16 @@ namespace Application.Repository
     //                         .ToListAsync();
     // }
 
+    
+    // Listar las ventas realizadas por un empleado especifico. El usuario debe ingresar el Id del empleado y mostrar la siguiente información.
+    // 1. Id Empleado
+    // 2. Nombre del empleado
+    // 3. Facturas: Nro Factura, fecha y total de la factura.
+    // public override async Task<IEnumerable<Venta>> GetVentasByIdEmpleado (int idEmpleado )
+    // {
+    //     return await _context.Ventas
+    //                         .Where(v => v.)
+    // }
     public override async Task<(int totalRegistros, IEnumerable<Venta> registros)> GetAllAsync(int pageIndex, int pageSize, string search)
             {
                 var query = _context.Ventas as IQueryable<Venta>;

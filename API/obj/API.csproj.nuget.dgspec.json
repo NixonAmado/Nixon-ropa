@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj": {}
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj": {
+    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\API.csproj",
+        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Api\\API.csproj",
         "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\API\\obj\\",
+        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"

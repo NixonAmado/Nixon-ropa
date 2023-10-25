@@ -15,6 +15,7 @@ namespace API.Dtos;
     public ClienteOrdenDto Cliente {get;set;}
     public EstadoADto Estado {get;set;}
     public decimal ValorTotalOrden {get;set;}
-    public List<DetalleOrdenEndCuatroDto> DetalleOrden {get;set;} 
+    public ICollection<DetalleOrdenEndCuatroDto> DetalleOrdenes {get;set;} 
     
     }
+

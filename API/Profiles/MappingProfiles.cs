@@ -11,26 +11,28 @@ public class MappingProfiles : Profile
         //CreateMap<Role, RoleDto>().ReverseMap();
         CreateMap<Cargo,CargoPDto>().ReverseMap();
         CreateMap<Cliente,ClientePDto>().ReverseMap();
-        CreateMap<Cliente,ClienteOrdenDto>().ReverseMap();
+        CreateMap<Cliente,ClienteOrdenDto>().ReverseMap();//
         
         CreateMap<Color,ColorPDto>().ReverseMap();
         CreateMap<Departamento,DepartamentoPDto>().ReverseMap();
         CreateMap<DetalleOrden,DetalleOrdenPDto>().ReverseMap();
+        CreateMap<DetalleOrden,DetalleOrdenEndCuatroDto>().ReverseMap();//
+
         CreateMap<DetalleVenta,DetalleVentaPDto>().ReverseMap();
         CreateMap<Empleado,EmpleadoPDto>().ReverseMap();
         CreateMap<Empresa,EmpresaPDto>().ReverseMap();
         CreateMap<Estado,EstadoPDto>().ReverseMap();
-        CreateMap<Estado,EstadoADto>().ReverseMap();
+        CreateMap<Estado,EstadoADto>().ReverseMap();//
 
         CreateMap<FormaPago,FormaPagoPDto>().ReverseMap();
         CreateMap<Genero,GeneroPDto>().ReverseMap();
         CreateMap<Insumo,InsumoPDto>().ReverseMap();
         CreateMap<Inventario,InventarioPDto>().ReverseMap();
         CreateMap<Municipio,MunicipioPDto>().ReverseMap();
-        CreateMap<Municipio,MunicipioNombreDto>().ReverseMap();
+        CreateMap<Municipio,MunicipioNombreDto>().ReverseMap();//
         
         CreateMap<Orden,OrdenPDto>().ReverseMap();
-        CreateMap<Orden,OrdenClienteDto>().ReverseMap();
+        CreateMap<OrdenCliente,OrdenClienteDto>().ReverseMap();//
 
         CreateMap<Pais,PaisPDto>().ReverseMap();
         CreateMap<Prenda,PrendaPDto>().ReverseMap();

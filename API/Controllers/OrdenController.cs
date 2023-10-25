@@ -21,7 +21,7 @@ public class OrdenController : BaseApiController
     }
 
     [Authorize(Roles = "Administrador")]
-    [HttpGet("GetAllOrdenesbyIdCliente/{id}")]
+    [HttpGet("GetAllOrdenesbyIdCliente/{idCliente}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<OrdenClienteDto>>> GetAllOrdenesbyIdCliente(int idCliente)

@@ -43,14 +43,18 @@ namespace Application.Repository
     public async Task<IEnumerable<OrdenCliente>> GetAllOrdenesbyIdCliente(int idCliente)
     {
         return await _context.Ordenes         
-                            .Where(p => p.Cliente.Id == idCliente)
+                            .Where(p => p.Cliente.Identificacion.Equals(idCliente))
+                            .Include(p => p.Cliente)
+                            .ThenInclude(p => p.Municipio)
+                            .Include(p => p.DetalleOrdenes)
+                            .ThenInclude(p => p.Prenda)
                             .Select(p => new OrdenCliente
                             {
                                 Fecha = p.Fecha,
                                 Cliente = p.Cliente,
                                 Estado = p.Estado,
-                                ValorTotalOrden = (decimal)p.DetalleOrdenes.Select(p => p.CantidadProducida * p.Prenda.ValorUnitCop).First(),
-                                DetalleOrden = p.DetalleOrdenes
+                                ValorTotalOrden = (decimal)p.DetalleOrdenes.Select(p => p.CantidadProducida * p.Prenda.ValorUnitCop).FirstOrDefault(),
+                                DetalleOrdenes = p.DetalleOrdenes
                             })
                             .ToListAsync();
     }    

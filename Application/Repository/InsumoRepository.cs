@@ -36,13 +36,13 @@ namespace Application.Repository
         return await _context.Prendas.Where(e => e.IdPrenda == codigo)
             .SelectMany(e => e.Insumos)
             .ToListAsync();
-        ;
+        
     }
     //Listar los Insumos que son vendidos por un determinado proveedor cuyo tipo de persona sea Persona Jurídica. El usuario debe ingresar el Nit de proveedor.
     public async Task<IEnumerable<Insumo>> GetAllByProvedorTipoPersona(string Tpersona, int Nit )
     {
         return await _context.Insumos         
-                            .Where(p => p.InsumosProveedores.Any(p =>  p.Proveedor.TipoPersona.Nombre.ToUpper() == Tpersona.ToUpper() && 
+                            .Where(p => p.InsumosProveedores.Any(p => p.Proveedor.TipoPersona.Nombre.ToUpper() == Tpersona.ToUpper() && 
                             p.Proveedor.NitProveedor == Nit))
                             .ToListAsync();
     }

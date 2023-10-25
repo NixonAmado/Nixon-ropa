@@ -15,7 +15,6 @@ public class DetalleOrdenEndCuatroDto
     public int Id {get;set;}
     public int IdOrden {get; set;}
     public PrendaOrdenDto Prenda {get; set;}
-    public string CantidadPrendas {get;set;}
-    public double ValorTotalPesos {get;set;}
-    public double ValorTotalDolares {get;set;}
-}
+     public int CantidadProducida {get;set;}
+
+   }

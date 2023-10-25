@@ -20,7 +20,6 @@ public class InsumoController : BaseApiController
         _unitOfWork = unitOfWork;
     }
 
-    [Authorize(Roles = "Administrador")]
     [HttpGet("GetAllInsumosByPrenda/{Idprenda}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

@@ -13,6 +13,8 @@ namespace API.Dtos;
 
      public class PrendaOrdenDto
     {
-        public string Nombre { get; set; }
         public int IdPrenda {get;set;}
+        public string Nombre { get; set; }
+        public double ValorUnitCop {get;set;}
+        public double ValorUnitUsd {get;set;}
     }
