@@ -2,7 +2,7 @@ namespace Domain.Entities
 {
     public class DetalleVenta : BaseEntity
     {
-        public string Cantidad {get;set;}
+        public int Cantidad {get;set;}
         public double ValorUnit {get;set;}
         public int IdInventarioFk {get;set;}
         public Inventario Inventario {get;set;}

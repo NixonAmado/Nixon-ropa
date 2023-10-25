@@ -20,6 +20,8 @@ public class MappingProfiles : Profile
 
         CreateMap<DetalleVenta,DetalleVentaPDto>().ReverseMap();
         CreateMap<Empleado,EmpleadoPDto>().ReverseMap();
+        CreateMap<Empleado,EmpleadoVentaDto>().ReverseMap();
+        
         CreateMap<Empresa,EmpresaPDto>().ReverseMap();
         CreateMap<Estado,EstadoPDto>().ReverseMap();
         CreateMap<Estado,EstadoADto>().ReverseMap();//
@@ -27,7 +29,11 @@ public class MappingProfiles : Profile
         CreateMap<FormaPago,FormaPagoPDto>().ReverseMap();
         CreateMap<Genero,GeneroPDto>().ReverseMap();
         CreateMap<Insumo,InsumoPDto>().ReverseMap();
+
         CreateMap<Inventario,InventarioPDto>().ReverseMap();
+        CreateMap<Inventario,InventarioPrendaDto>().ReverseMap();
+        CreateMap<Inventario,InventarioTallaDto>().ReverseMap();
+        
         CreateMap<Municipio,MunicipioPDto>().ReverseMap();
         CreateMap<Municipio,MunicipioNombreDto>().ReverseMap();//
         
@@ -37,6 +43,7 @@ public class MappingProfiles : Profile
         CreateMap<Pais,PaisPDto>().ReverseMap();
         CreateMap<Prenda,PrendaPDto>().ReverseMap();
         CreateMap<Prenda,PrendaOrdenDto>().ReverseMap();
+        CreateMap<Prenda,PrendaNombreDto>().ReverseMap();
 
         CreateMap<Proveedor,ProveedorPDto>().ReverseMap();
         CreateMap<Talla,TallaPDto>().ReverseMap();
@@ -44,6 +51,8 @@ public class MappingProfiles : Profile
         CreateMap<TipoPersona,TipoPersonaPDto>().ReverseMap();
         CreateMap<TipoProteccion,TipoProteccionPDto>().ReverseMap();
         CreateMap<Venta,VentaPDto>().ReverseMap();
+        CreateMap<Venta,VentaEmpleadoDto>().ReverseMap();
+        CreateMap<VentaEmpleado,VentaEmpleadoDto>().ReverseMap();
         
         // CreateMap<Pet, FullPetDto>().ReverseMap();
         // CreateMap<Pet, PetStatDto>()

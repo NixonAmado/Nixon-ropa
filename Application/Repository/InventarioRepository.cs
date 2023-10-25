@@ -27,6 +27,15 @@ namespace Application.Repository
     //                         .Include()
     //                         .ToListAsync();
     // }
+    //Listar los productos y tallas del inventario. La consulta debe mostrar el id del inventario, nombre del producto, tallas y cantidad de cada talla.
+    public async Task<IEnumerable<Inventario>> GetProductoByInv()
+    {
+        return await _context.Inventarios
+                .Include(p => p.Prenda)
+                .ToListAsync();
+                            
+
+    }    
 
     public override async Task<(int totalRegistros, IEnumerable<Inventario> registros)> GetAllAsync(int pageIndex, int pageSize, string search)
             {

@@ -33,11 +33,19 @@ namespace Application.Repository
     // 1. Id Empleado
     // 2. Nombre del empleado
     // 3. Facturas: Nro Factura, fecha y total de la factura.
-    // public override async Task<IEnumerable<Venta>> GetVentasByIdEmpleado (int idEmpleado )
-    // {
-    //     return await _context.Ventas
-    //                         .Where(v => v.)
-    // }
+    public async Task<IEnumerable<VentaEmpleado>> GetVentasByIdEmpleado (int idEmpleado )
+    {
+        return await _context.Ventas
+                            .Where(v => v.Cliente.Id == idEmpleado)
+                            .Select(p => new VentaEmpleado
+                            {
+                                Id = p.Id,
+                                Empleado = p.Empleado,
+                                Fecha = p.Fecha,
+                                TotalFactura = p.DetalleVentas.Sum(p => p.Cantidad * p.ValorUnit)
+                            })
+                            .ToListAsync();
+    }
     public override async Task<(int totalRegistros, IEnumerable<Venta> registros)> GetAllAsync(int pageIndex, int pageSize, string search)
             {
                 var query = _context.Ventas as IQueryable<Venta>;

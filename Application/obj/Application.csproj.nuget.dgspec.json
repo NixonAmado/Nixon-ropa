@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj": {}
+    "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj": {
+    "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\obj\\",
+        "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\AIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\AIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj"
+              "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj"
+              "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
+    "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\AIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\AIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -127,21 +127,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\AIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\AIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -153,8 +153,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj"
+              "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj"
               }
             }
           }
@@ -198,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

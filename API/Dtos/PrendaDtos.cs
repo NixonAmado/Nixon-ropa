@@ -18,3 +18,8 @@ namespace API.Dtos;
         public double ValorUnitCop {get;set;}
         public double ValorUnitUsd {get;set;}
     }
+
+         public class PrendaNombreDto
+    {
+        public string Nombre { get; set; }
+    }

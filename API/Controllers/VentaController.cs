@@ -19,7 +19,16 @@ public class VentaController : BaseApiController
         _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
-    
+
+    [HttpGet("GetVentasByIdEmpleado/{IdEmpleado}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<IEnumerable<VentaEmpleadoDto>>> GetVentasByIdEmpleado( int IdEmpleado)
+    {
+        var ventas = await _unitOfWork.Ventas.GetVentasByIdEmpleado(IdEmpleado);
+        return _mapper.Map<List<VentaEmpleadoDto>>(ventas);
+    }
+
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

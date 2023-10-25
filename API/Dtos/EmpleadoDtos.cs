@@ -9,3 +9,8 @@ public class EmpleadoPDto
     public int IdMunicipioFk {get;set;}
 }
 
+public class EmpleadoVentaDto 
+{
+    public int Id {get;set;}
+    public string Nombre {get;set;}
+}
