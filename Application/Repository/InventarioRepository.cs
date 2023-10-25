@@ -32,6 +32,8 @@ namespace Application.Repository
     {
         return await _context.Inventarios
                 .Include(p => p.Prenda)
+                .Include(p => p.InventariosTallas)
+
                 .ToListAsync();
                             
 

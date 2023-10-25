@@ -19,7 +19,15 @@ public class InventarioController : BaseApiController
         _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
-    
+    [HttpGet("GetProductoByInv")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<IEnumerable<InventarioPrendaDto>>> GetProductoByInv()
+    {
+        var inventarios = await _unitOfWork.Inventarios.GetProductoByInv();
+        return _mapper.Map<List<InventarioPrendaDto>>(inventarios);
+    }
+
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

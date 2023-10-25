@@ -38,7 +38,7 @@ Listar los empleados por un cargo especifico. Los cargos que se encuentran en la
 
 Listar las ordenes de producción que pertenecen a un cliente especifico. El usuario debe ingresar el IdCliente y debe obtener la siguiente información:
 ```
-/API/Orden/GetAllOrdenesbyIdCliente/{idCliente}
+/API/Orden/GetAllOrdenesbyIdCliente/{identificacionCliente}
 ```
 1. IdCliente, Nombre, Municipio donde se encuentra ubicado.
 2. Nro de orden de producción, fecha y el estado de la orden de producción Se debe mostrar la descripción del estado, código del estado, valor total de la orden de producción.
@@ -50,10 +50,14 @@ Listar las ventas realizadas por un empleado especifico. El usuario debe ingresa
 1. Id Empleado
 2. Nombre del empleado
 3. Fecturas : Nro Factura, fecha y total de la factura.
+```
+/API/Venta/GetVentasByIdEmpleado/{idEmpleado}
+```
 
 Listar los productos y tallas del inventario. La consulta debe mostrar el id del inventario, nombre del producto, tallas y cantidad de cada talla.
-
-
+```
+/API/Inventario/GetProductoByInv
+```
 
 
 

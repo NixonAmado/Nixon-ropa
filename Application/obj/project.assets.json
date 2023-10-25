@@ -5273,19 +5273,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AIO\\.nuget\\packages\\": {}
+    "C:\\Users\\APT01-65\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\AIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Application\\obj\\",
+      "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\APT01-65\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\APT01-65\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5297,11 +5297,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Domain\\Domain.csproj"
+            "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\AIO\\Documents\\c#\\Nixon-ropa\\Persistence\\Persistence.csproj"
+            "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\APT01-65\\Documents\\Skeleton-Campus\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -5331,7 +5331,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,7 +11,7 @@ public class VentaPDto
 public class VentaEmpleadoDto
 {
     public EmpleadoVentaDto Empleado {get;set;}
-    public int Id {get;set;}
+    public int NroFactura {get;set;}
     public DateTime Fecha {get;set;}
     public double TotalFactura {get;set;}
 

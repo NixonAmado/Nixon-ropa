@@ -51,7 +51,9 @@ public class MappingProfiles : Profile
         CreateMap<TipoPersona,TipoPersonaPDto>().ReverseMap();
         CreateMap<TipoProteccion,TipoProteccionPDto>().ReverseMap();
         CreateMap<Venta,VentaPDto>().ReverseMap();
-        CreateMap<Venta,VentaEmpleadoDto>().ReverseMap();
+        CreateMap<Venta,VentaEmpleadoDto>()
+        .ForMember(e => e.NroFactura, op => op.MapFrom(e => e.Id))
+        .ReverseMap();
         CreateMap<VentaEmpleado,VentaEmpleadoDto>().ReverseMap();
         
         // CreateMap<Pet, FullPetDto>().ReverseMap();
