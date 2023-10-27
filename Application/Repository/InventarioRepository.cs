@@ -33,10 +33,8 @@ namespace Application.Repository
         return await _context.Inventarios
                 .Include(p => p.Prenda)
                 .Include(p => p.InventariosTallas)
-
+                .ThenInclude(p => p.Talla)
                 .ToListAsync();
-                            
-
     }    
 
     public override async Task<(int totalRegistros, IEnumerable<Inventario> registros)> GetAllAsync(int pageIndex, int pageSize, string search)

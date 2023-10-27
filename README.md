@@ -16,8 +16,6 @@ Listar los insumos que pertenecen a una prenda especifica. El usuario debe ingre
 ```
 /API/Insumo/GetAllInsumosByPrenda/{codigoPrenda}
 ```
-![Alt text](ImagesReadme\insumoConsulta.png)
-
 
 Listar los Insumos que son vendidos por un determinado proveedor cuyo tipo de persona sea Persona Jurídica. El usuario debe ingresar el Nit de proveedor.
 ```
@@ -33,8 +31,6 @@ Listar los empleados por un cargo especifico. Los cargos que se encuentran en la
 ```
 /API/Empleado/GetAllEmpleadosByCargo/{cargo}
 ```
-![Alt text](ImagesReadme\CargosConsulta.png)
-
 
 Listar las ordenes de producción que pertenecen a un cliente especifico. El usuario debe ingresar el IdCliente y debe obtener la siguiente información:
 ```
@@ -49,7 +45,7 @@ Listar las ventas realizadas por un empleado especifico. El usuario debe ingresa
 
 1. Id Empleado
 2. Nombre del empleado
-3. Fecturas : Nro Factura, fecha y total de la factura.
+3. Facturas : Nro Factura, fecha y total de la factura.
 ```
 /API/Venta/GetVentasByIdEmpleado/{idEmpleado}
 ```
@@ -58,12 +54,6 @@ Listar los productos y tallas del inventario. La consulta debe mostrar el id del
 ```
 /API/Inventario/GetProductoByInv
 ```
-
-
-
-
-
-
 
 ### Uso de Json Web Token
 Ya que no se cargan usuarios en la base de datos, es necesesario crearlo. Por defecto el rol de usuario va ser Empleado, el cual puede hacer peticiones a todo el CRUD menos a los enpoints especiales. Cuando se prueben los endpoints es necesario que el usuario tenga el rol de Administrador el cual se le asigna por medio del addrole.

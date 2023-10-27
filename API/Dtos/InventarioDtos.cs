@@ -12,6 +12,6 @@ public class InventarioPrendaDto
 {
     public int  CodInventario {get; set;}
     public PrendaNombreDto Prenda {get; set;}      
-    public List<InventarioTallaDto> InventarioTallas {get;set;}
+    public List<InventarioTallaDto> DetalleTallas {get;set;}
 
 }

@@ -31,8 +31,10 @@ public class MappingProfiles : Profile
         CreateMap<Insumo,InsumoPDto>().ReverseMap();
 
         CreateMap<Inventario,InventarioPDto>().ReverseMap();
-        CreateMap<Inventario,InventarioPrendaDto>().ReverseMap();
-        CreateMap<Inventario,InventarioTallaDto>().ReverseMap();
+        CreateMap<Inventario,InventarioPrendaDto>()
+        .ForMember(e => e.DetalleTallas, op => op.MapFrom(e => e.InventariosTallas))
+        .ReverseMap();
+        CreateMap<InventarioTalla,InventarioTallaDto>().ReverseMap();
         
         CreateMap<Municipio,MunicipioPDto>().ReverseMap();
         CreateMap<Municipio,MunicipioNombreDto>().ReverseMap();//
@@ -51,11 +53,10 @@ public class MappingProfiles : Profile
         CreateMap<TipoPersona,TipoPersonaPDto>().ReverseMap();
         CreateMap<TipoProteccion,TipoProteccionPDto>().ReverseMap();
         CreateMap<Venta,VentaPDto>().ReverseMap();
-        CreateMap<Venta,VentaEmpleadoDto>()
-        .ForMember(e => e.NroFactura, op => op.MapFrom(e => e.Id))
-        .ReverseMap();
-        CreateMap<VentaEmpleado,VentaEmpleadoDto>().ReverseMap();
-        
+
+        CreateMap<VentaEmpleado,VentaEmpleadoDto>().ReverseMap()
+        .ForMember(e => e.Id, op => op.MapFrom(e => e.NroFactura))
+        .ReverseMap();       
         // CreateMap<Pet, FullPetDto>().ReverseMap();
         // CreateMap<Pet, PetStatDto>()
         // .ForMember(e => e.Breed, op => op.MapFrom(e => e.Breed.Name))
